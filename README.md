@@ -3,7 +3,7 @@ Introducció al xip ESP8266 de l'assignatura de Robòtica
 
 ## Exemples
 
-1. [Sensor DHT](/Sensor_DHT)
+1. [Sensor DHT22](/Sensor_DHT22)
 2. [Mòdul wifi]
 3. [Servidor web]
 
