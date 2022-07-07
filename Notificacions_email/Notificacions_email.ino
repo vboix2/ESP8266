@@ -11,6 +11,8 @@ const String url = "/trigger/" + event_name + "/with/key/" + apiKey;
 WiFiClient client;
 
 int minuts = 0;     // Comptador del temps transcorregut
+unsigned long previous_millis = 0;
+
 
 void setup() {
   Serial.begin(9600);
@@ -48,11 +50,13 @@ void connectToWiFi(){
   Serial.println("WiFi connected");
 }
 
-void waitTime(){
-  Serial.print("Esperant");
-  for (int i=0; i<6; i++){
+void waitTime() {
+  unsigned long current_millis = millis();
+  while (current_millis < (previous_millis + 60000)) {
     delay(10000);
+    current_millis = millis();
     Serial.print(".");
   }
-  Serial.println(".");
+  previous_millis = current_millis;
+  Serial.println();
 }
