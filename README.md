@@ -7,6 +7,7 @@ Introducció al xip ESP8266 de l'assignatura de Robòtica
 2. [Mòdul wifi](/Llibreria_WiFi)
 3. [Servidor web](/Servidor_web)
 4. [Notificacions per correu electrònic](/Notificacions_email)
+5. [Notificacions per Telegram](/Notificacions_TelegramBot)
 
 ## Material
 * ESP8266
