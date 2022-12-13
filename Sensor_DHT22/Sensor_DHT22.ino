@@ -1,5 +1,5 @@
 // Importem la llibreria del sensor
-#include <DHT.h>
+#include <DHT.h>  // DHT sensor library by Adafruit
 
 // Creem l'objecte sensor, de tipus DHT22 i connectat al pin 4
 DHT dht(D4, DHT22);
