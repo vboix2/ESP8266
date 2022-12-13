@@ -1,5 +1,5 @@
 // Importem la llibreria per gestionar la wifi
-#include <ESP8266WiFi.h>
+#include <ESP8266WiFi.h>    // WiFiManager by tablatronix
 
 
 void setup() {
