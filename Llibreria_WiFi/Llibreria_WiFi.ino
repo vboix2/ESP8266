@@ -1,9 +1,6 @@
 // Importem la llibreria per gestionar la wifi
 #include <ESP8266WiFi.h>
 
-// Guardem les claus de la wifi en dues variables
-const char* ssid     = "SSID";
-const char* password = "password";
 
 void setup() {
   // Inicialitzem el monitor sèrie
@@ -11,7 +8,7 @@ void setup() {
 
   // Connectem el microcontrolador a la wifi
   WiFi.mode(WIFI_STA);                     // Configura la placa en mode estació
-  WiFi.begin(ssid, password);              // Guarda les claus de la wifi a la memòria de la placa
+  WiFi.begin("SSID", "password");          // Guarda les claus de la wifi a la memòria de la placa
   
   Serial.print("Connectant a la xarxa ");  // Missatge de connexió al monitor
   Serial.print(ssid);
